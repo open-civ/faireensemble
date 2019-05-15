@@ -1518,6 +1518,7 @@ ActiveRecord::Schema.define(version: 2019_03_26_080224) do
     t.boolean "email_on_notification", default: false, null: false
     t.string "nickname", limit: 20, default: "", null: false
     t.string "personal_url"
+    t.string "document_number"
     t.text "about"
     t.datetime "officialized_at"
     t.jsonb "officialized_as"
