@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = { git: "https://github.com/open-civ/decidim", branch: "0.17-stable" }
+# DECIDIM_VERSION = { git: "https://github.com/open-civ/decidim", branch: "0.17-stable" }
 
 gem "decidim", git: "https://github.com/open-civ/decidim.git", branch: "0.17-stable"
 gem "decidim-initiatives", git: "https://github.com/open-civ/decidim.git", branch: "0.17-stable"
@@ -19,7 +19,7 @@ gem "puma"
 
 group :development, :test do
   gem "byebug", platform: :mri
-  gem "decidim-dev", DECIDIM_VERSION
+  gem "decidim-dev", git: "https://github.com/open-civ/decidim.git", branch: "0.17-stable"
   gem "rspec-rails"
 end
 
