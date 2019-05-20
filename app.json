@@ -1,6 +1,6 @@
 {
-  "name": "decidim_terrassa",
-  "description": "TODO: Add a short description about decidim_terrassa",
+  "name": "faire_ensemble",
+  "description": "TODO: Add a short description about faire_ensemble",
   "keywords": [],
   "addons": [
     "heroku-postgresql:hobby-dev",
