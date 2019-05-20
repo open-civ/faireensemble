@@ -18,10 +18,11 @@ if Rails.application.secrets.aws_access_key_id.present?
       provider:              'AWS',                                             # required
       aws_access_key_id:     Rails.application.secrets.aws_access_key_id,     # required
       aws_secret_access_key: Rails.application.secrets.aws_secret_access_key, # required
-      region:                'eu-central-1',                                       # optional, defaults to 'us-east-1'
-      host:                  's3.eu-central-1.amazonaws.com',                                  # optional, defaults to nil
+      region:                'eu-west-1',                                       # optional, defaults to 'us-east-1'
+      host:                  's3.eu-west-1.amazonaws.com',                                  # optional, defaults to nil
     }
-    config.fog_directory  = 'metadecidim'                                 # required
-    config.fog_attributes = { 'Cache-Control' => "max-age=#{365.day.to_i}" }    # optional, defaults to {}
+    config.fog_directory  = ENV.fetch("AWS_BUCKET_NAME", 'debatcitoyen')                                 # required
+    config.fog_public     = false
+    config.fog_attributes = { 'Cache-Control' => "max-age=#{365.day.to_i}",'X-Content-Type-Options' => "nosniff" }     # optional, defaults to {}
   end
 end
