@@ -1490,6 +1490,7 @@ ActiveRecord::Schema.define(version: 2019_03_26_080224) do
     t.datetime "last_sign_in_at"
     t.string "current_sign_in_ip"
     t.string "last_sign_in_ip"
+    t.string "document_number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "invitation_token"
@@ -1517,8 +1518,7 @@ ActiveRecord::Schema.define(version: 2019_03_26_080224) do
     t.string "roles", default: [], array: true
     t.boolean "email_on_notification", default: false, null: false
     t.string "nickname", limit: 20, default: "", null: false
-    t.string "personal_url"
-    t.string "document_number"
+    t.string "personal_url"    
     t.text "about"
     t.datetime "officialized_at"
     t.jsonb "officialized_as"
