@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/open-civ/decidim.git
-  revision: 76b1ed1f5bc590214b0f16b8a21c49c54172eaed
+  revision: 08e928f261fbdc66287e8fe40657fef059246f84
   branch: 0.17-stable
   specs:
     decidim (0.17.0)
@@ -158,6 +158,18 @@ GIT
       decidim-core (= 0.17.0)
     decidim-generators (0.17.0)
       decidim-core (= 0.17.0)
+    decidim-initiatives (0.17.0)
+      decidim-admin (= 0.17.0)
+      decidim-comments (= 0.17.0)
+      decidim-core (= 0.17.0)
+      decidim-verifications (= 0.17.0)
+      kaminari (~> 1.0)
+      origami
+      social-share-button (~> 1.0)
+      virtus-multiparams
+      wicked (~> 1.3)
+      wicked_pdf
+      wkhtmltopdf-binary
     decidim-meetings (0.17.0)
       cells-erb (~> 0.1.0)
       cells-rails (~> 0.0.9)
@@ -315,6 +327,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
+    colorize (0.8.1)
     concurrent-ruby (1.1.5)
     connection_pool (2.2.2)
     crack (0.4.3)
@@ -544,6 +557,8 @@ GEM
     omniauth-twitter (1.4.0)
       omniauth-oauth (~> 1.1)
       rack
+    origami (2.1.0)
+      colorize (~> 0.7)
     orm_adapter (0.5.0)
     paper_trail (9.2.0)
       activerecord (>= 4.2, < 5.3)
@@ -719,7 +734,7 @@ GEM
     smart_properties (1.14.0)
     social-share-button (1.2.0)
       coffee-rails
-    spreadsheet (1.2.3)
+    spreadsheet (1.2.4)
       ruby-ole (>= 1.0)
     spring (2.0.2)
       activesupport (>= 4.2)
@@ -766,6 +781,8 @@ GEM
       coercible (~> 1.0)
       descendants_tracker (~> 0.0, >= 0.0.3)
       equalizer (~> 0.0, >= 0.0.9)
+    virtus-multiparams (0.1.1)
+      virtus (~> 1.0)
     warden (1.2.8)
       rack (>= 2.0.6)
     web-console (3.7.0)
@@ -780,6 +797,8 @@ GEM
     websocket-driver (0.7.0)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.3)
+    wicked (1.3.3)
+      railties (>= 3.0.7)
     wicked_pdf (1.4.0)
       activesupport
     wisper (2.0.0)
@@ -798,6 +817,7 @@ DEPENDENCIES
   decidim-conferences!
   decidim-consultations!
   decidim-dev!
+  decidim-initiatives!
   faker (~> 1.8.4)
   fog-aws
   letter_opener_web (~> 1.3.0)
