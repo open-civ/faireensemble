@@ -7,7 +7,6 @@ ruby RUBY_VERSION
 # DECIDIM_VERSION = { git: "https://github.com/open-civ/decidim", branch: "0.17-stable" }
 
 gem "decidim", git: "https://github.com/open-civ/decidim.git", branch: "0.17-stable"
-gem "decidim-initiatives", git: "https://github.com/open-civ/decidim.git", branch: "0.17-stable"
 gem "decidim-consultations", git: "https://github.com/open-civ/decidim.git", branch: "0.17-stable"
 gem "decidim-conferences", git: "https://github.com/open-civ/decidim.git", branch: "0.17-stable"
 gem 'omniauth-decidim', git: 'https://github.com/decidim/omniauth-decidim'
